@@ -18,88 +18,71 @@ let square7 = document.querySelector("#square7");
 let square8 = document.querySelector("#square8");
 
 let biggerSquare1 = () => {
-  square1.style.height = "130px";
-  square1.style.width = "130px";
+  document.querySelector("#square1").classList.add("active");
 }
 
 let smallerSquare1 = () => {
-  square1.style.height = "100px";
-  square1.style.width = "100px";
+  document.querySelector("#square1").classList.remove("active");
 }
 
 let biggerSquare2 = () => {
-  square2.style.height = "130px";
-  square2.style.width = "130px";
+  document.querySelector("#square2").classList.add("active");
 }
 
 let smallerSquare2 = () => {
-  square2.style.height = "100px";
-  square2.style.width = "100px";
+  document.querySelector("#square2").classList.remove("active");
 }
 
 let biggerSquare3 = () => {
-  square3.style.height = "130px";
-  square3.style.width = "130px";
+  document.querySelector("#square3").classList.add("active");
 }
 
 let smallerSquare3 = () => {
-  square3.style.height = "100px";
-  square3.style.width = "100px";
+  document.querySelector("#square3").classList.remove("active");
 }
 
 let biggerSquare4 = () => {
-  square4.style.height = "130px";
-  square4.style.width = "130px";
+  document.querySelector("#square4").classList.add("active");
 }
 
 let smallerSquare4 = () => {
-  square4.style.height = "100px";
-  square4.style.width = "100px";
+  document.querySelector("#square4").classList.remove("active");
 }
 
 let biggerSquare5 = () => {
-  square5.style.height = "130px";
-  square5.style.width = "130px";
+  document.querySelector("#square5").classList.add("active");
 }
 
 let smallerSquare5 = () => {
-  square5.style.height = "100px";
-  square5.style.width = "100px";
+  document.querySelector("#square5").classList.remove("active");
 }
 
 let biggerSquare6 = () => {
-  square6.style.height = "130px";
-  square6.style.width = "130px";
+  document.querySelector("#square6").classList.add("active");
 }
 
 let smallerSquare6 = () => {
-  square6.style.height = "100px";
-  square6.style.width = "100px";
+  document.querySelector("#square6").classList.remove("active");
 }
 
 let biggerSquare7 = () => {
-  square7.style.height = "130px";
-  square7.style.width = "130px";
+  document.querySelector("#square7").classList.add("active");
 }
 
 let smallerSquare7 = () => {
-  square7.style.height = "100px";
-  square7.style.width = "100px";
+  document.querySelector("#square7").classList.remove("active");
 }
 
 let biggerSquare8 = () => {
-  square8.style.height = "130px";
-  square8.style.width = "130px";
+  document.querySelector("#square8").classList.add("active");
 }
 
 let smallerSquare8 = () => {
-  square8.style.height = "100px";
-  square8.style.width = "100px";
+  document.querySelector("#square8").classList.remove("active");
 }
 
 
-
-square1.addEventListener("mouseenter",  biggerSquare1);
+square1.addEventListener("mouseenter", biggerSquare1);
 square1.addEventListener("mouseleave",  smallerSquare1);
 
 square2.addEventListener("mouseenter", biggerSquare2);
