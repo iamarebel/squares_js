@@ -1,0 +1,22 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #bdc0c0;
+} 
+
+.sectionOne {
+  margin-top:20px;
+}
+
+.sectionOne, .sectionTwo {
+  display:flex;
+  justify-content: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  margin: 15px; 
+  background-color: #1D2228;
+}
