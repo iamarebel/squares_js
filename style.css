@@ -20,6 +20,7 @@ body {
   margin: 15px; 
   background-color: #1D2228;
   transition: transform .4s ease, background-color .4s ease; 
+  cursor: pointer;
 }
 
 .active {

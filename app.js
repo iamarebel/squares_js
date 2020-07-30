@@ -1,86 +1,88 @@
-// krok 1
+//krok1
 // gdy najeżdzamy na dany kwadrat  myszką to  chcemy żeby się powiekszył (mouseenter)
 // jak wyjezdzamy z danego kwadratu to chemy zeby sie pomniejszyl (mouseleave)
-
-// znalesc wszystkie kwadratu - done -dodane id 
+// znalesc wszystkie kwadratu - done -dodane id z numerami
 // dodane nasluchiwacze na wjechanie i wyjechanie z kazdego kwadratu / done 
-// funkcje bigger square i smallersquare  dla zmiany wykladu po najechaniu lubwyjechaniu 
+// funkcje bigger square i smallersquare  dodaje/usuwajace klase activedla zmiany wygladu po najechaniu lubwyjechaniu 
 // chcemy aby aktywny byl tylko ten kwadrat na ktorego najeżdzamy , po wyjechaniu zeby przestal byc aktywny
 
+//krok2 (????)
+//po najechaniu na kwadrat i powiekszeniu chcemu klikiem zatrzymac powiekszona pozycje 
+//mozemy wszystkie na stale pwoikeszyc 
+// po odkliknięciu zeby kwadrat wrocil do początkowoego wygladu
 
-let square1 = document.querySelector("#square1");
-let square2 = document.querySelector("#square2");
-let square3 = document.querySelector("#square3");
-let square4 = document.querySelector("#square4");
-let square5 = document.querySelector("#square5");
-let square6 = document.querySelector("#square6");
-let square7 = document.querySelector("#square7");
-let square8 = document.querySelector("#square8");
+
+let biggerSquare = (squareNumber) => {
+  document.querySelector("#square" + squareNumber).classList.add("active");
+}
+
+let smallerSquare = (squareNumber) => {
+  document.querySelector("#square" + squareNumber).classList.remove("active");
+  }
 
 let biggerSquare1 = () => {
-  document.querySelector("#square1").classList.add("active");
+  biggerSquare(1);
 }
 
 let smallerSquare1 = () => {
-  document.querySelector("#square1").classList.remove("active");
+  smallerSquare(1);
 }
 
 let biggerSquare2 = () => {
-  document.querySelector("#square2").classList.add("active");
+  biggerSquare(2);
 }
 
 let smallerSquare2 = () => {
-  document.querySelector("#square2").classList.remove("active");
+  smallerSquare(2);
 }
 
 let biggerSquare3 = () => {
-  document.querySelector("#square3").classList.add("active");
+  biggerSquare(3);
 }
 
 let smallerSquare3 = () => {
-  document.querySelector("#square3").classList.remove("active");
+  smallerSquare(3);
 }
 
 let biggerSquare4 = () => {
-  document.querySelector("#square4").classList.add("active");
+  biggerSquare(4);
 }
 
 let smallerSquare4 = () => {
-  document.querySelector("#square4").classList.remove("active");
+  smallerSquare(4);
 }
 
 let biggerSquare5 = () => {
-  document.querySelector("#square5").classList.add("active");
+  biggerSquare(5);
 }
 
 let smallerSquare5 = () => {
-  document.querySelector("#square5").classList.remove("active");
+  smallerSquare(5);
 }
 
 let biggerSquare6 = () => {
-  document.querySelector("#square6").classList.add("active");
+  biggerSquare(6);
 }
 
 let smallerSquare6 = () => {
-  document.querySelector("#square6").classList.remove("active");
+  smallerSquare(6);
 }
 
 let biggerSquare7 = () => {
-  document.querySelector("#square7").classList.add("active");
+  biggerSquare(7);
 }
 
 let smallerSquare7 = () => {
-  document.querySelector("#square7").classList.remove("active");
+  smallerSquare(7);
 }
 
 let biggerSquare8 = () => {
-  document.querySelector("#square8").classList.add("active");
+  biggerSquare(8);
 }
 
 let smallerSquare8 = () => {
-  document.querySelector("#square8").classList.remove("active");
+  smallerSquare(8);
 }
-
 
 square1.addEventListener("mouseenter", biggerSquare1);
 square1.addEventListener("mouseleave",  smallerSquare1);
@@ -105,3 +107,4 @@ square7.addEventListener("mouseleave", smallerSquare7);
 
 square8.addEventListener("mouseenter", biggerSquare8);
 square8.addEventListener("mouseleave", smallerSquare8);
+
